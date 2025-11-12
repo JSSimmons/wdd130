@@ -1,3 +1,4 @@
+/* This file determines how the file index.html looks. */
 main {
     max-width: 840px;
     text-align: center;
@@ -7,6 +8,8 @@ nav {
     background-color: darkblue;
     padding: 10px;
 }
+
+/* This comment was made without using shortcuts. */
 
 nav a {
     color: white;
