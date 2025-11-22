@@ -16,24 +16,24 @@ main p {
 }
 
 nav {
-    background-color: darkblue;
+    background-color: var(--main-color);
     padding: 10px;
 }
 
 /* This comment was made without using shortcuts. */
 
 nav a {
-    color: white;
+    color: var(--accent-color);
     display: block;
     padding: 20px;
 }
 
 h1 {
-    color: darkblue;
+    color: var(--main-color);
 }
 
 h2 {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--border-color);
 }
 
 main img {
@@ -44,17 +44,17 @@ main img {
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
-    background-color: white;
+    background-color: var(--accent-color);
 }
 
 aside img {
     margin: 0 15px;
     width: 200px;
     height: auto;
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
     padding: 2px;
     box-shadow: 0 0 30px gray;
-    background-color: white;
+    background-color: var(--accent-color);
 }
 
 p {
