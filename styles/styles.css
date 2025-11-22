@@ -1,7 +1,18 @@
 /* This file determines how the file index.html looks. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 main {
     max-width: 840px;
     text-align: center;
+}
+
+main p {
+    margin: 10px;
+
 }
 
 nav {
@@ -26,8 +37,10 @@ h2 {
 }
 
 main img {
+    float: right;
     width: 150px;
     height: auto;
+    margin: 0px 20px;
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
@@ -49,7 +62,7 @@ p {
 }
 
 aside {
-    width: 39rem;
+    width: 20em;
     height: auto;
     margin: 2px;
     border: 1px 0 solid rgb (0 0 0 / 0.2);
@@ -57,10 +70,27 @@ aside {
     background-color: deepskyblue;
     color: #111;
     text-align: center;
+    position: relative;
+}
+
+aside h2{
+    position: absolute;
+    top: 30px;
+    left: 70px;
 }
 
 footer {
     margin-top: 2px solid black;
     border-top: 20px;
     text-align: center;
+}
+
+/* Class Selectors */
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000
 }
