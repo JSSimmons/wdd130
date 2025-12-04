@@ -18,9 +18,23 @@ body {
     color: var(--accent1-color);
 }
 
-header, main, footer {
-    width: 840px;
+main, footer {
+    width: 800px;
     margin: 0 auto;
+    padding: 10px 10px;
+    align-content: end;
+}
+header {
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    align-items: center;
+}
+
+header nav{
+    justify-content: start;
 }
 
 h1, h2 {
