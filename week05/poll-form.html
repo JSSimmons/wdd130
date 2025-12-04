@@ -7,6 +7,7 @@
     <title>Form Exercises</title>
     <meta name="description" content="Practicing using form elements.">
     <meta name="author" content="James Simmons">
+    <link rel="stylesheet" href="styles/poll-form.css">
 </head>
 
 <body>
@@ -15,22 +16,30 @@
     </header>
     <main>
         <form>
-            <label for="fullname">Full Name:</label>
-            <input type="text" id="fullname" name="fullname" required>
-            <label for="useremail">Email:</label>
-            <input type="email" id="useremail" name="useremail" required>
-            <label for="quantity">What is your favorite browser?</label>
-            <select name="browser" id="browser">
-                <option value="1">Chrome</option>
-                <option value="2">Safari</option>
-                <option value="3">Edge</option>
-                <option value="4">Firefox</option>
-                <option value="5">Brave</option>
-                <option value="6">Internet Explorer</option>
-                <option value="7">Other</option>
-            </select>
-            <label for="pet">Do you have a household pet?</label>
-            <input type="checkbox" name="pet" id="pet">
+            <div class="form-item column2">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-item column2">
+                <label for="useremail">Email:</label>
+                <input type="email" id="useremail" name="useremail" required>
+            </div>
+            <div class="form-item column1">
+                <label for="quantity">What is your favorite browser?</label>
+                <select name="browser" id="browser">
+                    <option value="1">Chrome</option>
+                    <option value="2">Safari</option>
+                    <option value="3">Edge</option>
+                    <option value="4">Firefox</option>
+                    <option value="5">Brave</option>
+                    <option value="6">Internet Explorer</option>
+                    <option value="7">Other</option>
+                </select>
+            </div>
+            <div class="form-item column1">
+                <label for="pet">Do you have a household pet?</label>
+                <input type="checkbox" name="pet" id="pet">
+            </div>
             <label for="feedback">List the places you have lived</label>
             <textarea name="feedback" id="feedback" rows="4"
                 placeholder="Flagstaff Arizona, Busan Korea, Sydney Australia, etc."></textarea>
