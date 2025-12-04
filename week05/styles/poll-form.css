@@ -55,8 +55,8 @@ input, select, textarea {
 }
 
 input[type="checkbox"] {
-    width: 10px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     justify-self: center;
     vertical-align: bottom;
 }
