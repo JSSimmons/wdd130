@@ -2,7 +2,7 @@
     --primary-color: navy;
     --secondary-color: maroon;
     --accent1-color: seagreen;
-    --accent2-color: yellow;
+    --accent2-color: rgb(250, 250, 100);
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -15,26 +15,38 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: var(--secondary-color);
 }
 
 main, footer {
     width: 800px;
     margin: 0 auto;
-    padding: 10px 10px;
+    padding: 0px;
     align-content: end;
+    background-color: var(--accent2-color);
 }
 header {
-    width: 400px;
-    margin: 0 auto;
+    width: 800px;
+    margin: 10px auto;
     padding: 10px 10px;
-    display: grid;
-    grid-template-columns: repeat(5, 20%);
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    background-color: var(--primary-color);
 }
 
 header nav{
-    justify-content: start;
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+header nav a{
+    padding: 5px;
+    border: 1px solid rgb(0 0 0 / 20%);
+    background-color: var(--accent1-color);
+
+
 }
 
 h1, h2 {
@@ -42,7 +54,7 @@ h1, h2 {
     color: var(--primary-color);
 }
 
-nav, p, section, article {
+p, section, article {
     margin: 16px;
     padding: 8px;
 }
@@ -61,6 +73,56 @@ nav, p, section, article {
     height: auto;
 }
 
+.hero section p {
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+}
+.hero section iframe{
+    float: left;
+}
+
+form{
+    padding: 10px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+}
+
+form label{
+    grid-column: 1;
+    padding: 5px;
+}
+
+form input{
+    margin: 5px;
+    padding: 5px;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form textarea {
+    margin: 5px;
+    padding: 5px;
+    grid-column: span 2;
+    min-width: 100%;
+    max-width: 10px;
+}
+
+form button{
+    margin: 5px;
+    grid-column: span 2;
+}
+
+.newsletter{
+    grid-column: span 3;
+}
+
 h1 {
     position: absolute;
     top: 20px;
@@ -74,9 +136,23 @@ h1 {
 
 .hero article img {
     float: right;
-    width: 125px;
+    width: 300px;
 }
 
-footer a img {
-    margin: 16px
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid rgb(0 0 0 / 20%);
+    background-color: var(--accent2-color);
+}
+
+footer nav{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
+}
+footer nav a img{
+    padding: 10px;
+    max-width: 50px;
+    height: auto;
 }
